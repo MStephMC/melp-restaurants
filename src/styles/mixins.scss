@@ -1,0 +1,99 @@
+@mixin table-style($width) {
+    width: $width;
+    text-align: left;
+    th {
+        min-width: 35px;
+        color: #a3a3a3;
+        font-weight: 200;
+        text-transform: uppercase;
+        font-size: 12.5px;
+        cursor: pointer;
+        i {
+            margin-left: 8px;
+        }
+    }
+    tbody {
+        box-shadow: 0 0 0 1px $light-gray;
+        td {
+            border-bottom: 1pt solid $light-gray;
+            text-transform: capitalize;
+            span {
+                display: block;
+                margin: 0;
+                padding: 0
+            }
+            img {
+                width: 80px;
+            }
+        }
+    }
+    .checkbox-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+        cursor: pointer;
+        input {
+            opacity: 0;
+        }
+        input:checked~.checkmark {
+            border: none;
+            background-color: $green;
+        }
+        input:checked~.checkmark:after {
+            display: block;
+        }
+        .checkmark {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border: 1px solid #a3a3a3;
+            border-radius: 5px;
+        }
+        .checkmark:hover {
+            background-color: #ccc;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        .checkmark:after {
+            left: 6px;
+            top: 3px;
+            width: 4px;
+            height: 8px;
+            border: solid $white;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+@mixin input-style ($width, $height, $align, $font-size) {
+    height: $height;
+    width: $width;
+    padding: 0 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    color: #8f8f8f;
+    background-color: $white;
+    text-align-last: $align;
+    font-size: $font-size;
+}
+
+@media screen and (max-width: 415px) {
+    footer {
+        justify-content: center;
+        .contact {
+            padding-right: 0;
+            i {
+                font-size: 20px !important;
+            }
+            a,
+            span {
+                font-size: 13.5px;
+            }
+        }
+    }
+}

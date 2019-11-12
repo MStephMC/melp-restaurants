@@ -1,0 +1,73 @@
+@import './variables';
+body {
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #7c7c7c;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-image: $gradient;
+    .title {
+        color: $white;
+        font-size: 45px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    background-image: $gradient;
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-right: 20px;
+        color: $white;
+        i {
+            font-size: 30px!important;
+        }
+        a,
+        span {
+            padding: 0 10px;
+            color: $white;
+            font-size: 16.5px;
+            text-decoration: none;
+        }
+    }
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    button {
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .btn-cancel {
+        background: none;
+        border: none;
+        color: #b20000;
+    }
+    .btn-save {
+        background: $green;
+        border: none;
+        color: $white;
+        border-radius: 5px;
+        border: none;
+        height: 35px;
+        width: 150px;
+    }
+}
+
