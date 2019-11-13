@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import restaurantPreviewView from './restaurantPreviewView'
+
 
 function restaurantPreview(props){
     return(

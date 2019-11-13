@@ -40,7 +40,7 @@ function TableRestaurantsView(props){
             </thead>
             <tbody>
             {
-                restaurants.data.map(restaurant=>{
+                restaurants.data.map (restaurant => {
                     return(
                         <restaurantPreview {...restaurant} key={restaurant._id}/>
                     )
