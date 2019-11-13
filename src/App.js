@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import './styles/styles.scss';
 import './styles/mixins.scss'
+import DescripcionCard from './app/components/DescripcionCard/DescripcionCard'
+import TableRestaurants from './app/components/TableRestaurants/TableRestaurants'
 
 
 function App() {
@@ -9,20 +11,25 @@ function App() {
     <div className="App">
       
       <header className="App-header">
-        MELP 
+       <div className="title"> MELP  </div> 
       </header>
+      <section className = "selection-container">
+          <DescripcionCard/>
+          <TableRestaurants/>
+      </section>
+        cuerpo
       <footer>
-        <div class="contact">
-            <i class="fa fa-phone-square"></i>
+        <div className="contact">
+            <i className="fa fa-phone-square"></i>
             <span>(55)3149-8112</span>
         </div>
-        <div class="contact">
-            <i class="fa fa-linkedin-square"></i>
-            <a href="https://www.linkedin.com/in/" target="_blank">Magalli Mejia</a>
+        <div className="contact">
+            <i className="fa fa-linkedin-square"></i>
+            <a href="https://www.linkedin.com/in/magallistephaniemejiacampos/" target="_blank">Magalli Mejia</a>
         </div>
-        <div class="contact">
-            <i class="fa fa-github-square"></i>
-            <a href="https://github.com/" target="_blank">Magalli Mejia</a>
+        <div className="contact">
+            <i className="fa fa-github-square"></i>
+            <a href="https://github.com/MStephMC/melp-restaurants.git" target="_blank">MStephMC</a>
         </div>
       </footer>
     </div>

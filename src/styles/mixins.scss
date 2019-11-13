@@ -1,3 +1,4 @@
+@import './variables';
 @mixin table-style($width) {
     width: $width;
     text-align: left;
@@ -95,5 +96,41 @@
                 font-size: 13.5px;
             }
         }
+    }
+}
+
+/////////////////////////////////////////////
+
+.restaurant-table {
+    @include table-style(100%);
+}
+
+@media screen and (max-width: 1240px) and (min-width: 1115px) {
+    .priority-5 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1114px) and (min-width: 825px) {
+    .priority-5,
+    .priority-4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 824px) and (min-width: 705px) {
+    .priority-5,
+    .priority-4,
+    .priority-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .priority-5,
+    .priority-4,
+    .priority-3,
+    .priority-2 {
+        display: none;
     }
 }
